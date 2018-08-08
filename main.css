@@ -1,0 +1,45 @@
+.{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 400px;
+    border: 5px solid black;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.flexBox--calculatorBody{
+    background-color: blanchedalmond;
+}
+
+button{
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    width: 24%;
+    height: 100px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+div{
+    background-color: blanchedalmond;
+    font-size: 5rem;
+    word-wrap: break-word;
+    text-align: right;
+    padding-right: 20px;
+    height:100px;
+}
+.zero{
+    width: 49%;
+}
+.equals{
+    width: 49%;
+}
+.clear{
+    width: 49%;
+    background-color: red;
+}
+.opperator{
+    background-color: aquamarine;
+}
