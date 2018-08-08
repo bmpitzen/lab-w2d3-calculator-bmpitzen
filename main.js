@@ -119,7 +119,8 @@ plus.addEventListener('click', function(e){
     display.innerText += "+"
   });
 clear.addEventListener('click', function(e){
-    display.innerText = ""
+    display.innerText = "";
+    display.classList.remove ("entered");
   });
 equals.addEventListener('click', function(e){
     try {
