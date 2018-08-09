@@ -17,117 +17,62 @@ var clear = document.getElementById("clear")
 var equals = document.getElementById("equals")
 var display = document.getElementById("display")
 
+function checkDisplay(number){
+    if (display.classList.contains ("entered")){
+        display.innerText = "";
+        display.innerText += number;
+        display.classList.remove ("entered");
+    } else {
+    display.innerText += number
+    }
+}
+
 
 seven.addEventListener('click', function(e){
-    if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "7";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "7"
-    }});
+    checkDisplay("7")
+});
 
 eight.addEventListener('click', function(e){
-    if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "8";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "8"
-    }});
+    checkDisplay("8")});
 
 nine.addEventListener('click', function(e){
-    if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "9";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "9"
-    }});
+    checkDisplay("9")});
 
 divide.addEventListener('click', function(e){
     display.innerText += "/"
   });
 
 four.addEventListener('click', function(e){
-        if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "4";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "4"
-    }});
+    checkDisplay("4")});
 
 five.addEventListener('click', function(e){
-        if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "5";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "5"
-    }});
+    checkDisplay("5")});
 
 six.addEventListener('click', function(e){
-        if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "6";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "6"
-    }});
+    checkDisplay("6")});
 
 times.addEventListener('click', function(e){
     display.innerText += "*"
   });
 
 one.addEventListener('click', function(e){
-    if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "1";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "1"
-    }});
+    checkDisplay("1")});
 
 two.addEventListener('click', function(e){
-    if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "2";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "2"
-    }});
+    checkDisplay("2")});
 
 three.addEventListener('click', function(e){
-    if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "3";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "3"
-    }});
+    checkDisplay("3")});
 
 minus.addEventListener('click', function(e){
     display.innerText += "-"
   });
 
 zero.addEventListener('click', function(e){
-    if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += "0";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "0"
-    }});
+    checkDisplay("0")});
 
 decimal.addEventListener('click', function(e){
-    if (display.classList.contains ("entered")){
-        display.innerText = "";
-        display.innerText += ".";
-        display.classList.remove ("entered");
-    } else {
-    display.innerText += "."
-    }});
+    checkDisplay(".")});
 
 plus.addEventListener('click', function(e){
     display.innerText += "+"
