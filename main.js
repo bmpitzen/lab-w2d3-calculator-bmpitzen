@@ -26,6 +26,7 @@ seven.addEventListener('click', function(e){
     } else {
     display.innerText += "7"
     }});
+
 eight.addEventListener('click', function(e){
     if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -34,6 +35,7 @@ eight.addEventListener('click', function(e){
     } else {
     display.innerText += "8"
     }});
+
 nine.addEventListener('click', function(e){
     if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -42,9 +44,11 @@ nine.addEventListener('click', function(e){
     } else {
     display.innerText += "9"
     }});
+
 divide.addEventListener('click', function(e){
     display.innerText += "/"
   });
+
 four.addEventListener('click', function(e){
         if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -53,6 +57,7 @@ four.addEventListener('click', function(e){
     } else {
     display.innerText += "4"
     }});
+
 five.addEventListener('click', function(e){
         if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -61,6 +66,7 @@ five.addEventListener('click', function(e){
     } else {
     display.innerText += "5"
     }});
+
 six.addEventListener('click', function(e){
         if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -69,9 +75,11 @@ six.addEventListener('click', function(e){
     } else {
     display.innerText += "6"
     }});
+
 times.addEventListener('click', function(e){
     display.innerText += "*"
   });
+
 one.addEventListener('click', function(e){
     if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -80,6 +88,7 @@ one.addEventListener('click', function(e){
     } else {
     display.innerText += "1"
     }});
+
 two.addEventListener('click', function(e){
     if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -88,6 +97,7 @@ two.addEventListener('click', function(e){
     } else {
     display.innerText += "2"
     }});
+
 three.addEventListener('click', function(e){
     if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -96,9 +106,11 @@ three.addEventListener('click', function(e){
     } else {
     display.innerText += "3"
     }});
+
 minus.addEventListener('click', function(e){
     display.innerText += "-"
   });
+
 zero.addEventListener('click', function(e){
     if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -107,6 +119,7 @@ zero.addEventListener('click', function(e){
     } else {
     display.innerText += "0"
     }});
+
 decimal.addEventListener('click', function(e){
     if (display.classList.contains ("entered")){
         display.innerText = "";
@@ -115,13 +128,16 @@ decimal.addEventListener('click', function(e){
     } else {
     display.innerText += "."
     }});
+
 plus.addEventListener('click', function(e){
     display.innerText += "+"
   });
+
 clear.addEventListener('click', function(e){
     display.innerText = "";
     display.classList.remove ("entered");
   });
+
 equals.addEventListener('click', function(e){
     try {
         display.innerText = eval(display.innerText)
